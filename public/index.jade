@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title NodeJS Starter Application
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="stylesheets/style.css")
+  body
+    table
+      tr
+        td(style= "width:30%;")
+          img.newappIcon(src="images/newapp-icon.png")
+        td
+          h1#message Translate App!
+          p.description Thanks for creating a 
+       		span.blue NodeJS Starter Application
+       	td
+       		form(action = "/", method="post")
+    		h3 Enter a String to be translated:
+		    input(type="text", name="input")
+		    input(type="submit", value="Translate")
+		    h3 Output: #{trans}
